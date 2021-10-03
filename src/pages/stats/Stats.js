@@ -27,7 +27,7 @@ function Stats() {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get("http://localhost:9090/employee-data")
+        .get("https://preciley.herokuapp.com/employee-data")
         .then((res) =>
           setEmployeeList((pre) => {
             return [...res.data.list];
@@ -52,7 +52,7 @@ function Stats() {
   };
   const handleSave = async (saveValue) => {
     await axios
-      .post("http://localhost:9090/edit-data", data)
+      .post("https://preciley.herokuapp.com/edit-data", data)
       .then((res) => {
         setEmployeeList((pre) => {
           return [...res.data.list];

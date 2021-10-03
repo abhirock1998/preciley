@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import React, { useState } from "react";
 import { BiHomeAlt } from "react-icons/bi";
-import { AiOutlineAppstore, AiOutlineTrophy } from "react-icons/ai";
+import { AiOutlineTrophy } from "react-icons/ai";
 import { GiDogHouse } from "react-icons/gi";
 import {
   IoPersonOutline,
@@ -19,7 +19,6 @@ import {
   IoAppsOutline,
 } from "react-icons/io5";
 import { useStyles } from "./styles";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 function Sidebar() {
   const [active, setActive] = useState(0);
